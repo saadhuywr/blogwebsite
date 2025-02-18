@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: clip;
+}
+
+:root {
+    --bg-color: #faf9fe;
+    --text-color: #000000;
+    --text-white: #ffffff;
+    --primary-color: #1a45bb;
+    --secondary-color: #c9bcbb;
+    --light-primary: #add8e6;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-family: "Poppins", serif;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 0.5rem;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 1.1em;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: var(--secondary-color);
+}
+
+/* home page */
+.h_carousel .carousel-inner .carousel-item img {
+    height: 550px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    filter: brightness(70%);
+    position: relative;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 300px;
+    left: 72px;
+    width: 350px;
+    height: 150px;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 60px 0px 50px 0px;
+}
+
+.card-img-overlay h5 {
+    font-size: 1.8rem !important;
+    font-style: italic;
+    font-family: 'Poppins', serif;
+}
+
+.h_latest_post .latest-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h_latest_post .latest-heading h2 {
+    font-family: serif;
+}
+
+.h_latest_post #blog-container .card-title {
+    text-transform: capitalize;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.h_latest_post #blog-container .blog-card img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.h_latest_post .arthor_d .card:hover {
+    transform: none;
+}
+
+.h_latest_post .arthor_detail .arthor_name {
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.h_latest_post .arthor_detail .arthor_img img {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.h_latest_post .arthor_detail .arthor_name_inner {
+    text-align: center;
+}
+
+.h_latest_post .arthor_detail .arthor_name_inner h6 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.h_latest_post .arthor_detail .arthor_name_inner p {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.h_latest_post .arthor_detail .arthor_name_inner p:nth-child(3) {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.h_latest_post .arthor_detail .arthor_name_inner .arthor_social i {
+    font-size: 30px;
+}
+
+.h_latest_post .arthor_d .Recent_Post .card-title {
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--text-color);
+    margin-bottom: 10px;
+}
+
+.h_latest_post .arthor_d .Recent_Post .card-body {
+    padding: 8px;
+}
+
+.h_latest_post .arthor_d .Recent_Post .card-body .name {
+    border-bottom: none;
+    margin-bottom: -5px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.h_latest_post .arthor_d .Recent_Post .card-body img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.h_latest_post .arthor_d .categories .card-title {
+    margin-bottom: 0px;
+}
+
+.h_latest_post .arthor_d .categories .category-item {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 2.5px;
+}
+
+.h_category_section .category_heading h2 {
+    font-family: serif;
+}
+
+.h_category_section .card-title {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* sp_single_post page */
+.sp_single_post .arthor_d .card:hover {
+    transform: none;
+}
+
+.sp_single_post .arthor_detail .arthor_name {
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.sp_single_post .arthor_detail .arthor_img img {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sp_single_post .arthor_detail .arthor_name_inner {
+    text-align: center;
+}
+
+.sp_single_post .arthor_detail .arthor_name_inner h6 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.sp_single_post .arthor_detail .arthor_name_inner p {
+    font-size: 12px;
+}
+
+.sp_single_post .arthor_detail .arthor_name_inner p:nth-child(3) {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sp_single_post .arthor_detail .arthor_name_inner .arthor_social i {
+    font-size: 30px;
+}
+
+.sp_single_post .arthor_d .Recent_Post .card-title {
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--text-color);
+    margin-bottom: 10px;
+}
+
+.sp_single_post .arthor_d .Recent_Post .card-body {
+    padding: 5px;
+}
+
+.sp_single_post .arthor_d .Recent_Post .card-body .name {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.sp_single_post .arthor_d .Recent_Post .card-body img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sp_single_post .arthor_d .categories .card-title {
+    margin-bottom: 0px;
+}
+
+.sp_single_post .arthor_d .categories .category-item {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 2.5px;
+}
+
+.sp_single_post .category_heading h2 {
+    font-family: serif, 'Times New Roman', Times;
+}
+
+.sp_single_post {
+    background-color: var(--bg-color);
+}
+
+.sp_single_post .left_side img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 20px;
+}
+
+.sp_single_post .left_side .post_info {
+    padding-top: 15px;
+}
+
+.sp_single_post .left_side .post_info h2 {
+    font-size: 38px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-family: serif, 'Times New Roman', Times;
+    text-transform: capitalize;
+}
+
+.sp_single_post .left_side .post_info p {
+    font-size: 14px;
+}
+
+.sp_single_post .left_side .post_info span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.sp_single_post .left_side .post_info .post_description {
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.sp_single_post .left_side .images_sec {
+    padding: 20px 0px;
+}
+
+.sp_single_post .left_side .images_sec img {
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 20px;
+}
+
+.sp_single_post .left_side .post_content {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.sp_single_post .left_side .post_meta_description {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.sp_single_post .left_side .post_meta_keywords {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* about page */
+.a_section-1 .left_side img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 20px;
+}
+
+.a_section-1 .left_side .a_info .a_info_text {
+    font-size: 16px;
+    padding-top: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.a_section-1 .left_side .a_info .a_description .a_description_text_1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.a_section-1 .left_side .a_info .a_description .a_description_text_2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.a_section-1 .left_side .a_info .a_poet {
+    border-left: 3px solid red;
+    padding-left: 30px;
+}
+
+.a_section-1 .left_side .a_info .a_poet h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.a_section-1 .left_side .a_info .a_last_description {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.a_section-1 .arthor_d .card:hover {
+    transform: none;
+}
+
+.a_section-1 .arthor_detail .arthor_name {
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.a_section-1 .arthor_detail .arthor_img img {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.a_section-1 .arthor_detail .arthor_name_inner {
+    text-align: center;
+}
+
+.a_section-1 .arthor_detail .arthor_name_inner h6 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.a_section-1 .arthor_detail .arthor_name_inner p {
+    font-size: 12px;
+}
+
+.a_section-1 .arthor_detail .arthor_name_inner p:nth-child(3) {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.a_section-1 .arthor_detail .arthor_name_inner .arthor_social i {
+    font-size: 30px;
+}
+
+.a_section-1 .arthor_d .Recent_Post .card-title {
+    padding-bottom: 7px;
+    border-bottom: 2px solid var(--text-color);
+    margin-bottom: 10px;
+}
+
+.a_section-1 .arthor_d .Recent_Post .card-body {
+    padding: 5px;
+}
+
+.a_section-1 .arthor_d .Recent_Post .card-body .name {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.a_section-1 .arthor_d .Recent_Post .card-body img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.a_section-1 .arthor_d .categories .card-title {
+    margin-bottom: 0px;
+}
+
+.a_section-1 .arthor_d .categories .category-item {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 2.5px;
+}
+
+.a_section-1 .category_heading h2 {
+    font-family: serif, 'Times New Roman', Times;
+}
+
+.a_section-1 {
+    background-color: var(--bg-color);
+}
+
+.a_section-1 .left_side img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 20px;
+}
+
+/* Responsive styles for large devices */
+@media (min-width: 1200px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 0 1rem;
+    }
+
+    .navbar-nav .nav-item a {
+        font-size: 1.2em;
+    }
+
+    .h_carousel .carousel-inner .carousel-item img {
+        height: 550px;
+    }
+
+    .card-img-overlay {
+        top: 300px;
+        left: 75px;
+        width: 430px;
+        height: 175px;
+        padding: 30px;
+        border-radius: 70px 0px 70px 0px;
+    }
+
+    .card-img-overlay h5 {
+        font-size: 2rem;
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .text-truncate {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+}
+
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+
+    .card-img-overlay{
+        left: 25px;
+        height: 160px;
+    }
+    .sp_single_post .arthor_d{
+        margin-top: 20px;
+    }
+    .sp_single_post .left_side .post_info div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
