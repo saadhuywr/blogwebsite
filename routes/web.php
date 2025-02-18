@@ -52,7 +52,5 @@ Route::delete('/about/delete/{id}', [AboutController::class, 'destroy'])->name('
 
 // Comment Controller All Routes
 Route::get('/comments/table/{id}', [CommentController::class, 'show'])->name('comments.table');
-Route::get('/comments/edit/{id}', [CommentController::class, 'edit'])->name('comments.edit');
-Route::put('/comments/update/{id}', [CommentController::class, 'update'])->name('comments.update');
 Route::post('/comments/store/{id}', [CommentController::class, 'store'])->name('comments.store');
 Route::delete('/comments/delete/{id}', [CommentController::class, 'destroy'])->name('comments.destroy');
